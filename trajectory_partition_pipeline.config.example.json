@@ -1,0 +1,21 @@
+{
+  "excluded_input_path": "./data/center_excluded_supplement_df.parquet",
+  "bayonet_match_path": "./data/center_realpos.csv",
+  "output_dir": "./output/trajectory_partition_excluded",
+  "output_prefix": "excluded_",
+  "input_csv_encoding": null,
+  "output_csv_encoding": "utf-8-sig",
+  "workers": 60,
+  "shard_count": 256,
+  "submit_window": 12,
+  "fixed_time_quantile": 0.7,
+  "fixed_time_upper_scale": 1.5,
+  "kkod_std_threshold": 100.0,
+  "kkod_min_samples": 50,
+  "iforest_n_estimators": 15,
+  "iforest_random_state": 2023,
+  "high_hours": [7, 8, 17, 18],
+  "flat_hours": [9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21],
+  "low_hours": [0, 1, 2, 3, 4, 5, 6, 22, 23],
+  "min_trip_duration_sec": 300
+}
